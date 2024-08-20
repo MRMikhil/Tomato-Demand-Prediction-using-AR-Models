@@ -5,9 +5,18 @@ The primary aim of this study was to evaluate the effectiveness of autoregressiv
 Commodity prices, especially those of agricultural products like tomatoes, are subject to frequent and often unpredictable fluctuations. These fluctuations are driven by factors such as seasonal variations, weather conditions, supply chain disruptions, and shifts in consumer demand. Traditional predicting models, including autoregressive approaches like AutoRegressive Integrated Moving Average (ARIMA) and Seasonal AutoRegressive Integrated Moving Average (SARIMA), are commonly used to predict future prices based on historical data. However, the effectiveness of these models in the context of highly volatile commodities remains questionable, and this study aims to explore their limitations and potential inaccuracies.
 
 **Analysis & Findings:**
-In this study, historical price data for tomatoes was analyzed using autoregressive models. The AutoRegressive Integrated Moving Average (ARIMA) model, which is designed to capture the underlying trend and seasonality in the data, was first applied. However, the lowest Mean Absolute Percentage Error achieved by this model was 86%, indicating a substantial gap between the predicted and actual prices. This high error rate suggests that the AutoRegressive Integrated Moving Average (ARIMA) model struggled to accurately predict the volatile price movements of tomatoes.
+In this study, historical price data for tomatoes was analyzed using autoregressive models. The AutoRegressive Integrated Moving Average (ARIMA) model, which is designed to capture the underlying trend and seasonality in the data, was first applied. However, the lowest Mean Absolute Percentage Error achieved by this model was 86% (Fig 1.1), indicating a substantial gap between the predicted and actual prices. This high error rate suggests that the AutoRegressive Integrated Moving Average (ARIMA) model struggled to accurately predict the volatile price movements of tomatoes.
 
-Next, the Seasonal AutoRegressive Integrated Moving Average (SARIMA) model was applied, which attempts to account for seasonal patterns that may influence price changes. While this model performed slightly better, it still yielded a significant error, with the lowest Mean Absolute Percentage Error being 36%. Although this is an improvement over the AutoRegressive Integrated Moving Average (ARIMA) model, the error rate remains too high for practical predicting purposes, particularly in the context of commodities like tomatoes, where sudden and sharp price changes are common.
+
+Fig 1.1 ARIMA Predictions
+![image](https://github.com/user-attachments/assets/43001f70-130b-4843-92e5-6a162e89d2e5)
+
+
+Fig 1.2 SARIMA Predictions
+![image](https://github.com/user-attachments/assets/4071e6e2-62aa-423b-a628-b7d90c76ae0d)
+
+ 
+Next, the Seasonal AutoRegressive Integrated Moving Average (SARIMA) model was applied, which attempts to account for seasonal patterns that may influence price changes. While this model performed slightly better, it still yielded a significant error, with the lowest Mean Absolute Percentage Error being 36% (Fig 1.2). Although this is an improvement over the AutoRegressive Integrated Moving Average (ARIMA) model, the error rate remains too high for practical predicting purposes, particularly in the context of commodities like tomatoes, where sudden and sharp price changes are common.
 
 **Conclusion:**
 The findings of this study indicate that autoregressive models, including both AutoRegressive Integrated Moving Average (ARIMA) and Seasonal AutoRegressive Integrated Moving Average (SARIMA), are not suitable for predicting the prices of highly volatile commodities such as tomatoes. Despite the inclusion of seasonal adjustments in the Seasonal AutoRegressive Integrated Moving Average model (SARIMA), the lowest Mean Absolute Percentage Error of 36% is still too high, highlighting the limitations of these models in accurately capturing the complexity and unpredictability of commodity prices.
